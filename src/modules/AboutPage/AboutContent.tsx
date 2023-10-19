@@ -13,18 +13,16 @@ export const AboutContent = () => {
   return (
     <div className="w-full flex flex-col gap-4">
       <p className="mb-4">
-        <b>TanyaAja</b> merupakan platform untuk kalian bisa gunakan untuk
-        mengumpulkan pertanyaan dari teman atau siapapun secara anonim. Tidak
-        ada satupun atribut yang bisa menunjukkan siapa yang mengajukan
-        pertanyaan tersebut, sehingga privasi dari orang yang bertanya lebih
-        terjamin. <b>TanyaAja</b> tidak menyediakan tempat untuk menjawab
-        pertanyaan-pertanyaan yang disampaikan, karenanya biasanya kalian bisa
-        membagikan ke sosial media dan menjawab pertanyaan tersebut di sana.
+        <b>Juat Ask</b> is a platform for you to use collect questions from
+        friends or anyone anonymously. No there is a single attribute that can
+        indicate who submitted the application these questions, so that the
+        privacy of the person asking is more guaranteed.<b>Juat Ask</b> does not
+        provide a place to answer the questions asked, then usually you can
+        share it on social media and answer the question there.
       </p>
 
       <p className="mb-4">
-        <b>TanyaAja</b> merupakan projek dengan kode sumber terbuka dan bisa
-        dipelajari di{' '}
+        <b>Juat Ask</b>is a project with open source code and can studied at{' '}
         <a
           href="https://github.com/mazipan/tanyaaja"
           target="_blank"
@@ -33,8 +31,8 @@ export const AboutContent = () => {
         >
           github.com/mazipan/tanyaaja
         </a>
-        , kalian bebas mempelajari atau bahkan mendeploy untuk kepentingan
-        kalian sendiri, namun tidak disarankan bila untuk kepentingan komersial.
+        , You are free to learn or even deploy for your benefit yourself, but it
+        is not recommended for commercial purposes.
       </p>
 
       <Card className="mb-4 p-4 flex justify-between items-center">
@@ -54,15 +52,15 @@ export const AboutContent = () => {
       </Card>
 
       <p className="mb-4">
-        Untuk terus mendukung <b>TanyaAja</b>, kalian bisa mengirimkan dana
-        untuk membeli kopi melalui{' '}
+        To continue to support <b>Juat Ask</b>, you can send funds to buy coffee
+        via{' '}
         <a
           href="https://mazipan.space/support"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
         >
-          laman donasi
+          donation page
         </a>
       </p>
 
@@ -73,7 +71,7 @@ export const AboutContent = () => {
 
       <p className="mb-4">
         <small>
-          <i>Terakhir diperbarui pada 18 September 2023</i>
+          <i>Last updated on September 18, 2023</i>
         </small>
       </p>
     </div>

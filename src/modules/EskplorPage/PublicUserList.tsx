@@ -43,7 +43,7 @@ export default function PublicUserList() {
       {isLoading ? (
         <>
           <h3 className="text-2xl font-bold tracking-tight flex gp-2 items-center">
-            Memuat data pengguna...
+            Loading user data...
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {[1, 2, 3].map((item) => (
@@ -62,7 +62,7 @@ export default function PublicUserList() {
                 </div>
 
                 <Button disabled type="button">
-                  Kunjungi
+                  Visit
                   <MoveUpRight className="w-4 h-4 ml-2" />
                 </Button>
               </Card>
@@ -74,7 +74,7 @@ export default function PublicUserList() {
           {publicUsers && publicUsers.length > 0 ? (
             <>
               <h3 className="text-2xl font-bold tracking-tight flex gp-2 items-center">
-                {publicUsers.length} pengguna ditemukan
+                {publicUsers.length} user found
               </h3>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -89,12 +89,12 @@ export default function PublicUserList() {
                         {up.name}
                       </h2>
                       <p className="text-sm text-muted-foreground">
-                        Telah dikunjungi {up.count} kali
+                        Have visited {up.count} times
                       </p>
                     </div>
                     <Button asChild>
                       <Link href={`/p/${up.slug}`}>
-                        Kunjungi
+                        Visit
                         <MoveUpRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
@@ -104,8 +104,8 @@ export default function PublicUserList() {
             </>
           ) : (
             <EmptyState
-              title="Tidak ada satupun pengguna yang ditemukan"
-              description="Maaf, tapi sepertinya tidak ada satupun pengguna yang tersedia dan telah mengijinkan untuk ditampilkan di laman ini"
+              title="Not a single user found ;("
+              description="Sorry, but it looks like there are no users available who have consented to being displayed on this page"
             />
           )}
         </>
